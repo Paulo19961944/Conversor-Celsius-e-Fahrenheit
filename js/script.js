@@ -6,6 +6,9 @@ let reset = document.getElementById('btn-reset');
 let resultadoCelsius = document.querySelector('.Celsius');
 let resultadoFahrenheit = document.querySelector('.Fahrenheit');
 
+// Define os valores iniciais das inputs como vazios
+inputCelsius.value = '';
+inputFahrenheit.value = '';
 
 function substituirSeparadorDecimal(valor) {
   return valor.replace(/,/g, '.');
