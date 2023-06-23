@@ -30,6 +30,11 @@ function converterEExibirResultado() {
   let celsius = parseFloat(inputCelsius.value);
   let fahrenheit = parseFloat(inputFahrenheit.value);
 
+  if ((isNaN(celsius) && isNaN(fahrenheit)) || (!isNaN(celsius) && !isNaN(fahrenheit))) {
+    alert('Preencha apenas um dos campos ou resete os valores.');
+    return;
+  }
+
   if (!isNaN(celsius)) {
     fahrenheit = converterCelsiusParaFahrenheit(celsius);
     inputFahrenheit.value = fahrenheit.toFixed(2);
