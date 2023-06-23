@@ -6,5 +6,7 @@ No Código em CSS foi feita a estilização ao meu gosto, usando API do Google F
 
 Já no JavaScript foi feita a Lógica onde ele captura as ID em HTML e seleciona as classes também. Depois ele faz o cálculo e insere o HTML nas classes do Celsius e Fahrenheit, exibe o resultado e faz o tratamento de erros do tipo NaN e usa 2 casas decimais após a vírgula. E também tem a opção de clicar no enter e ele dar o resultado, e de apagar usando o backspace e de resetar os valores pelo botão.
 
+Também adicionei um tratamento de erros para que não funcionem os dois de uma vez só, pois pode dar conflito no resultado, e também pode usar tanto ponto quanto virgula, ou seja, se adapta ao método americano ou europeu.
+
 
 Espero que gostem :) :) :)
