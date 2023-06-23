@@ -6,6 +6,11 @@ let reset = document.getElementById('btn-reset');
 let resultadoCelsius = document.querySelector('.Celsius');
 let resultadoFahrenheit = document.querySelector('.Fahrenheit');
 
+
+function substituirSeparadorDecimal(valor) {
+  return valor.replace(/,/g, '.');
+}
+
 function converterCelsiusParaFahrenheit(celsius) {
   return (celsius * 9/5) + 32;
 }
@@ -27,8 +32,8 @@ function limparValores() {
 }
 
 function converterEExibirResultado() {
-  let celsius = parseFloat(inputCelsius.value);
-  let fahrenheit = parseFloat(inputFahrenheit.value);
+  let celsius = parseFloat(substituirSeparadorDecimal(inputCelsius.value));
+  let fahrenheit = parseFloat(substituirSeparadorDecimal(inputFahrenheit.value));
 
   if ((isNaN(celsius) && isNaN(fahrenheit)) || (!isNaN(celsius) && !isNaN(fahrenheit))) {
     alert('Preencha apenas um dos campos ou resete os valores.');
